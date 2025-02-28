@@ -31,11 +31,13 @@
                 </ul>
             </nav>
             <a href="login.html" class="login-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 2a5 5 0 0 1 5 5v1" />
-                    <circle cx="12" cy="10" r="3" />
-                    <path d="M6 21v-2a6 6 0 0 1 12 0v2" />
+                <svg role="img" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <title>Ícone de Login</title>
+                    <path
+                        d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z"
+                        stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke="#000000"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
             </a>
         </div>
@@ -47,10 +49,9 @@
                 <img src="imagens/frlogo.png" alt="Logo FastRun" class="hero-logo" data-aos="fade-up">
                 <h1 data-aos="fade-up" data-aos-delay="100">Moda e Alta Performance</h1>
                 <p data-aos="fade-up" data-aos-delay="200">Sinta-se leve, corra mais rápido, supere seus limites.</p>
-                <a href="#" class="button" data-aos="fade-up" data-aos-delay="300">Compre Agora</a>
+                <a href="produtos.html" class="button" data-aos="fade-up" data-aos-delay="300">Compre Agora</a>
             </div>
         </section>
-
         <section id="products" class="products">
             <div class="container">
                 <h2 data-aos="fade-up">Produtos em Destaque</h2>
@@ -64,24 +65,37 @@
                     </div>
                     <div class="product-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="product-image">
-                            <img src="imagens/regata-frente-preta.png" alt="Regata Fast Run Preta">
+                            <img src="imagens/regata-frente-pretaa.png" alt="Regata Fast Run Preta">
                         </div>
                         <h3>Regata Fast Run - Preta</h3>
                         <p class="price">R$ 90,00</p>
                     </div>
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-image">
+                            <img src="imagens/boné-fr.png" alt="Boné Fast Run">
+                        </div>
+                        <h3>Boné Fast Run</h3>
+                        <p class="price">R$ 100,00</p>
+                    </div>
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-image">
+                            <img src="imagens/short-fr.png" alt="Short Fast Run">
+                        </div>
+                        <h3>Short Fast Run</h3>
+                        <p class="price">R$ 100,00</p>
+                    </div>
                 </div>
             </div>
         </section>
-
         <section id="sobre" class="philosophy">
             <div class="container">
                 <h2 data-aos="fade-up">Sobre Nós</h2>
                 <p data-aos="fade-up" data-aos-delay="100">A Fast Run é uma marca que une o universo streetwear com a
-                    paixão pela corrida e a ideia de correria
-                    do dia a dia. Criada por corredores, nosso objetivo é representar aqueles que estão sempre em
-                    movimento, seja buscando saúde, superação ou seus sonhos. Com um design autêntico e funcional,
-                    desenvolvemos peças que combinam estilo, conforto e performance, perfeitas para quem não para. Aqui,
-                    cada passo é uma conquista, e cada corrida tem um propósito.</p>
+                    paixão pela corrida e a ideia de correria do dia a dia. Criada por corredores, nosso objetivo é
+                    representar aqueles que estão sempre em movimento, seja buscando saúde, superação ou seus sonhos.
+                    Com um design autêntico e funcional, desenvolvemos peças que combinam estilo, conforto e
+                    performance, perfeitas para quem não para. Aqui, cada passo é uma conquista, e cada corrida tem um
+                    propósito.</p>
                 <p class="slogan" data-aos="fade-up" data-aos-delay="200">Fast Run - Vista a sua jornada.</p>
                 <a href="#" class="text-link" data-aos="fade-up" data-aos-delay="300">Saiba Mais Sobre Nós</a>
             </div>
@@ -92,12 +106,12 @@
         <div class="container">
             <p>&copy; 2025 FASTRUN. Todos os direitos reservados.</p>
             <div class="footer-links">
-                <a href="#">Política de Privacidade</a>
-                <a href="#">Termos de Serviço</a>
+                <a href="#" target="_blank">Política de Privacidade</a>
+                <a href="#" target="_blank">Termos de Serviço</a>
             </div>
         </div>
     </footer>
-
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -105,7 +119,7 @@
             once: true,
         });
     </script>
-    <script src="script.js"></script>
+
 </body>
 
 </html>
