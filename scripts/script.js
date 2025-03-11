@@ -10,6 +10,26 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    document.querySelector('.nav-list a').forEach(link => {
+        link.addEventListener('click', () => {
+            navList.classList.remove('active');
+            mobileMenu.classList.remove('active');
+        })
+    })
+
+    if (localStorage.getItem('mode') === 'register') {
+        loginBox.classList.add('hidden');
+        registerBox.classList.remove('hidden');
+    }
+
+    showRegister.addEventListener('click', () => {
+        localStorage.setItem('mode', 'register');
+    });
+
+    showLogin.addEventListener('click', () => {
+        localStorage.setItem('mode', 'login');
+    });
+
     // Scroll suave para links internos
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {

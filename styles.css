@@ -138,6 +138,23 @@ a:visited {
     transition: 0.3s;
 }
 
+.hero {
+    background: url('https://media.istockphoto.com/id/1489800212/pt/v%C3%ADdeo/close-up-athlete-legs-running-on-road-fit-runner-jogging-sprinting-endurance-exercise-in.jpg?s=640x640&k=20&c=lL2jm3jgznFeehGhRaqy43hyDlq13N-5VIbvOeM8pHk=') center/cover no-repeat;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Escurece o fundo para destacar o texto */
+}
+
+
 
 .hero {
     height: 100vh;
@@ -152,12 +169,12 @@ a:visited {
 .hero h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    color: var(--color-primary);
+    color: var(--color-background);
 }
 
 .hero p {
     font-size: 1.25rem;
-    color: var(--color-text-light);
+    color: var(--color-background);
     margin-bottom: 2rem;
 }
 
@@ -424,26 +441,31 @@ a:visited {
 }
 
 
-/* Estilos para a página de contato */
 .contact {
-    padding: 6rem 0 4rem;
-    /* Maior padding no topo para distanciar do header fixo */
+    padding: 6rem 0 6rem;
     background-color: var(--color-background-alt);
     margin-top: 60px;
-    /* Adiciona um espaço extra para evitar sobreposição do header fixo */
 }
 
 .contact h1 {
     font-size: 2.5rem;
     color: var(--color-primary);
-    margin-bottom: rem;
+    margin-bottom: 1rem;
 }
 
 .contact p {
     font-size: 1.25rem;
     color: var(--color-text-light);
-    margin-bottom: 10rem;
+    margin-bottom: 0.5rem;
 }
+
+.contact .container p {
+    font-size: 1.25rem;
+    color: var(--color-text-light);
+    margin-bottom: 0.5rem;
+}
+
+
 
 .contact .container {
     max-width: 800px;
